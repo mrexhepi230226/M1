@@ -16,6 +16,7 @@
     <br>
 
     <button type="button" onclick="sum()">+</button>
+    <button type="button" onclick="zbritje()">-</button>
     <p id="result"></p>
 
     <script>
@@ -26,6 +27,15 @@
             var c = a + b;
 
             document.getElementById('result').innerHTML = c;
+        }
+
+        function zbritje() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var e = a - b;
+
+            document.getElementById('result').innerHTML = e;
         }
     </script>
 </body>

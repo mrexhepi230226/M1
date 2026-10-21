@@ -21,8 +21,31 @@
     <button type="button" onclick="pjestimi()">pjestimi (/)</button>
 
     <p id="result"></p>
+    <br>
+    <br>
+    <h1>Rritje dhe zbritje te numrit</h1>
+    <p id="numri">0</p>
+    <button type="submit" onclick="rritje()">rritje</button>
+    <button type="submit" onclick="zbritje()">zbritje</button>
+    
 
     <script>
+
+
+        var n=0;
+        function rritje()
+        {
+            n=n+1;
+            document.getElementById('numri').innerHTML = n;
+        }
+
+         function zbritje()
+        {
+            n=n-1;
+            document.getElementById('numri').innerHTML = n;
+        }
+
+        
         function sum() {
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);

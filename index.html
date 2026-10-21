@@ -52,9 +52,15 @@
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
 
-            var p = a / b;
-
-            document.getElementById('result').innerHTML = p;
+             if (b == 0) 
+             {
+        document.getElementById('result').innerHTML = "Nuk mund të pjesëtohet me zero!";
+             } 
+             else 
+             {
+                  var c = a / b;
+                document.getElementById('result').innerHTML = c;
+              }
          }
     </script>
 </body>

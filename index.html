@@ -7,7 +7,26 @@
     <title>Java 1</title>
 </head>
 <body>
-    <h1>Mirë se vini!</h1>
-    <p>Kjo është faqja ime e parë në GitHub Pages.</p>
+    <label>Numri i parë</label>
+    <input type="number" id="nr1">
+    <br>
+
+    <label>Numri i dytë</label>
+    <input type="number" id="nr2">
+    <br>
+
+    <button type="button" onclick="sum()">+</button>
+    <p id="result"></p>
+
+    <script>
+        function sum() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var c = a + b;
+
+            document.getElementById('result').innerHTML = c;
+        }
+    </script>
 </body>
 </html>
